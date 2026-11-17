@@ -1,0 +1,52 @@
+
+:root {
+    --rosa: #b01758;
+    --roxo: #482568;
+    --fundo: #fff8fc;
+    --texto: #211b35;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+header {
+    background-color: var(--roxo);
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 20px;
+}
+
+button, a.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 12px 20px;
+    background-color: var(--rosa);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--roxo);
+    outline-offset: 3px;
+}
