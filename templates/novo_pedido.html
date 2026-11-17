@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Novo pedido — Costura Fácil</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Costura Fácil</h1>
+        <p>Cadastro de encomendas</p>
+    </header>
+
+    <main>
+        <h2>Novo pedido</h2>
+        <p>Preencha os dados da encomenda.</p>
+
+        <form method="post">
+            <p>
+                <label for="cliente">Cliente *</label>
+                <select id="cliente" name="cliente" required>
+                    <option value="">Selecione um cliente</option>
+                    <option value="1">Maria Oliveira</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="descricao">Descrição do serviço *</label>
+                <textarea id="descricao" name="descricao"
+                          required></textarea>
+            </p>
+
+            <p>
+                <label for="prazo">Prazo de entrega *</label>
+                <input type="date" id="prazo"
+                       name="prazo" required>
+            </p>
+
+            <p>Status inicial: Recebido</p>
+
+            <button type="submit">Salvar pedido</button>
+            <a href="/">Cancelar</a>
+        </form>
+    </main>
+</body>
+</html>
