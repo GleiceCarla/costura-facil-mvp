@@ -4,10 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Costura Fácil</title>
+    <title>Costura Fácil — Início</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Costura Fácil</h1>
-    <p>Organize seus pedidos de costura.</p>
+    <header>
+        <h1>Costura Fácil</h1>
+        <p>Organize seus pedidos de costura</p>
+    </header>
+
+    <main>
+        <h2>Bem-vinda!</h2>
+        <p>O que você deseja fazer hoje?</p>
+
+        <nav aria-label="Menu principal">
+            <a class="botao" href="#">
+                Novo pedido
+            </a>
+
+            <a class="botao" href="#">
+                Consultar pedidos
+            </a>
+        </nav>
+    </main>
 </body>
 </html>
+
