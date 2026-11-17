@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def inicio():
+    """Exibe a página inicial do Costura Fácil."""
     return render_template("index.html")
 
 
