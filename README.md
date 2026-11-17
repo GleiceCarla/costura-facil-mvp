@@ -1,4 +1,3 @@
-
 # Costura Fácil — MVP
 
 ## Sobre o projeto
